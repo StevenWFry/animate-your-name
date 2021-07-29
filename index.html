@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="alphabet.js"></script>
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div data-controller="animate-controls">
+      <div>
+  <input value="Hello World" data-action="input->animate-controls#changeRadius" data-target="animate-controls.text" type="text">
+  <button data-action="click->animate-controls#changeName">Change Text</button><br />
+        <input type=range step=1 value=40 data-target="animate-controls.radius"/>Radius: <span data-target="animate-controls.radiusOutput">40</span><br />
+</div>
+    <canvas id="myCanvas"></canvas>
+    </div>
+    <script type="text/javascript" src="bubbles.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
